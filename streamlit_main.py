@@ -150,7 +150,7 @@ if data and company_name:
         col3.markdown(f"`{int(output.iloc[0]['가입자수']):,}` 명")
 
 #동종업계와 비교
-        com_output = daata.compare_company(company_name = company_name)
+        com_output = data.compare_company(company_name = company_name)
         st.dataframe(comp_output.round(0), use_container_width=True)
 
         st.markdown(f'### 업종 평균 VS {company_name} 비교')
