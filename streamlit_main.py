@@ -109,7 +109,7 @@ class PensionData():
 # 국민연금공단_국민연금 가입 사업장 내역_20251124.csv
 file_path = r'https://www.dropbox.com/scl/fi/q05nabk8r0822dy8q1kew/_-_20251124.csv?rlkey=x3z852i71fwm60kc69rijiwno&st=cxcnw7rz&dl=1'
 
-@st.cache_resouce
+@st.cache_resource
 def read_pensiondata():
     data = PensionData(file_path)
     return data
