@@ -139,7 +139,7 @@ if data and company_name:
 
 
         col1, col2, col3 = st.columns(3)
-                col1.text('월급여 추정')
+        col1.text('월급여 추정')
         col1.markdown(f"`{int(output.iloc[0]['월급여추정']):,}` 원")
 
         col2.text('연봉 추정')
